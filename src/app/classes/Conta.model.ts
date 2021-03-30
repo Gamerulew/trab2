@@ -9,5 +9,5 @@ export interface ContaModel {
   usuario: UsuarioModel;
   descricao: string;
   tipo: TipoModel;
-  valor: string;
+  valor: string | number;
 }
