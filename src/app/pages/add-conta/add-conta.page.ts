@@ -59,6 +59,7 @@ export class AddContaPage implements OnInit {
 
   async submitForm() {
     this.conta.dataVencimento = moment(this.conta.dataVencimento);
+    this.conta.valor = Number(this.conta.valor);
     if (this.id) {
       this.contaService.editarConta(this.conta).subscribe(() => {
         alert('Conta editada com sucesso');
